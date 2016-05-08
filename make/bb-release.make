@@ -27,6 +27,7 @@ projects[mvf][version] = 1.0-beta3
 projects[multifield][version] = 1.0-alpha1
 projects[auto_nodetitle][version] = 1.0
 projects[units][version] = 1.0-rc1
+projects[currency][version] = 2.6
 
 ; Add compatibility with Features
 projects[auto_nodetitle][patch][] = https://www.drupal.org/files/issues/auto_nodetitle-881170-50.patch
