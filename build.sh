@@ -182,8 +182,7 @@ echo "--> Complete!"
 # Installing profiles
 echo
 echo "--> Porting over site's profile(s)..."
-ln -s "$CURDIR/profiles/tfa" $TARGET_PATH/profiles/tfa
-ln -s "$CURDIR/profiles/tfa_regional" $TARGET_PATH/profiles/tfa_regional
+ln -s "$CURDIR/profiles/buildboard" $TARGET_PATH/profiles/buildboard
 echo "--> Complete!"
 
 
