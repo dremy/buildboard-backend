@@ -1,0 +1,104 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+#Common Locations
+alias digix="cd /data/www/digix/national"
+alias digix_drupal="cd /data/www/digix/national/drupal"
+alias digix_tfa="cd /data/www/digix/national/tfa"
+alias regional="cd /data/www/digix/regional"
+alias regional_drupal="cd /data/www/digix/regional/drupal"
+alias regional_tfa="cd /data/www/digix/regional/tfa"
+alias digix_mods="cd /data/www/digix/national/drupal/sites/all/modules"
+alias digix_themes="cd /data/www/digix/national/drupal/sites/all/themes"
+alias digix_files="cd /data/www/digix/national/files"
+alias regional_mods="cd /data/www/digix/regional/drupal/sites/all/modules"
+alias regional_themes="cd /data/www/digix/regional/drupal/sites/all/themes"
+alias regional_files="cd /data/www/digix/regional/files"
+
+#Rsync
+alias rsync_digix="rsync -avz -e ssh www@pldigixweb1.prod.tfanet.org:/data/www/digix/national/files/ /data/www/digix/national/files/"
+alias rsync_digix_regional="rsync -avz -e ssh www@pldigixweb1.prod.tfanet.org:/data/www/digix/regional/files/ /data/www/digix/regional/files/"
+
+# Drush
+# CSS
+alias dnocss="drush vset preprocess_css 0"
+alias dyescss="drush vset preprocess_css 1"
+
+# JS
+alias dnojs="drush vset preprocess_js 0"
+alias dyesjs="drush vset preprocess_js 1"
+
+# Set theme default
+alias dthemedefault="drush vset theme_default”
+
+# Maintenance Mode On/Off
+alias dsiteoff="drush vset site_offline 1"
+alias dsiteon="drush vset site_offline 0"
+
+# Clear cache
+alias dca="drush cc all"
+
+# En/disable
+alias dey="drush en -y"
+alias ddy="drush dis -y"
+
+# Find stuff
+alias dpmlg="drush pml | grep"
+
+# Features fun
+alias dflg="drush fl | grep"
+alias dfr="drush fr -y"
+alias dfra="drush fra -y"
+alias dfd="drush fd"
+alias dfu="drush fu -y"
+
+# Db fun
+alias dupdb="drush updb"
+alias dsqlc="drush sqlc"
+alias dsqls="drush sql-sync"
+
+
+# Git
+alias gst="git status"
+alias gl="git pull"
+alias gp="git push"
+alias gd="git diff | mate"
+alias gc="git commit -v"
+alias gca="git commit -v -a"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gcm="git commit -m"
+alias gaa="git add -A"
+alias gco="git checkout"
+
+#Nano Common Files
+alias bp="nano ~/.bash_profile"
+
+#Various Comman Line Aliases
+alias sodu="sudo"
+alias .="pwd"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+alias cd..="cd .."
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias l="ls -lhaFG"
+#alias ll="ls -lhaF | less"
+alias lt="ls -lhatFG"
+alias llt="ls -lhatF | less"
+alias c="clear"
+alias e="exit"

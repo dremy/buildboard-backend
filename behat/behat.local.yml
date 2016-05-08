@@ -1,0 +1,22 @@
+default:
+  autoload:
+    - features/bootstrap
+  suites:
+      default:
+        paths:
+          - features/bootstrap
+        contexts:
+          - FeatureContext
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://local.digix.org' # No trailing slash
+      files_path: '/Users/jkestler/Sites/digix/tfa/behat/files'
+    Drupal\DrupalExtension:
+      drupal:
+        drupal_root: '/Users/jkestler/Sites/digix/html/'
+      text:
+        username_field: "Email"
+        log_in: "Sign In"
+      region_map:
+        Content: ".content"
+        Header First Row:  ".header-first-row"

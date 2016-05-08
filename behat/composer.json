@@ -1,0 +1,13 @@
+{
+  "require": {
+    "behat/behat": "3.*@stable",
+      "behat/mink": "1.6.*@stable",
+      "behat/mink-extension": "@stable",
+      "behat/mink-goutte-driver": "@stable",
+      "emuse/behat-html-formatter": "@stable",
+      "drupal/drupal-extension": "3.1.x-dev"
+  },
+   "config": {
+      "bin-dir": "bin/"
+   }
+}

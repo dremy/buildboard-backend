@@ -1,0 +1,30 @@
+default:
+  autoload: 
+    - features/bootstrap
+  suites:
+      default:
+        paths:  
+          - features
+        contexts:
+          - FeatureContext
+          - Drupal\DrupalExtension\Context\DrupalContext
+          - Drupal\DrupalExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      selenium2: ~
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: 'drupal'
+      region_map:
+        Scald Library: .scald-library
+        Scald Admin: .scald-admin
+        Main tabs: .tabs.primary
+        Panels Left Region: "#panels-ipe-regionid-left"
+        Panels Category Box: .panels-categories-box
+        Panels IPE Control: "#panels-ipe-control-container"
+        Main Content: '#main'
+
+imports:
+  - behat.local.yml
+
