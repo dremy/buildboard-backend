@@ -22,6 +22,7 @@ projects[group][version] = 1.0-beta6
 ; Fields
 projects[entityreference][version] = 1.1
 projects[geofield][version] = 2.3
+projects[geophp][version] = 1.7
 projects[mvf][version] = 1.0-beta3
 projects[multifield][version] = 1.0-alpha1
 projects[auto_nodetitle][version] = 1.0
