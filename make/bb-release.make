@@ -17,7 +17,7 @@ projects[module_filter][version] = 2.0
 projects[taxonomy_manager][version] = 1.0
 
 ; Group
-projects[group][version] = 1.0-beta6+8-dev
+projects[group][version] = 1.0-beta6
 
 ; Fields
 projects[entityreference][version] = 1.1
@@ -43,5 +43,5 @@ projects[angular_drupal][version] = 1.1
 ; Services
 projects[services][version] = 3.13
 ; Services create multivalued field nodes
-projects[services][patch][] = https://www.drupal.org/files/issues/services-create-multivalued-field-nodes-2224803.18-D7.patch
+projects[services][patch][] = https://www.drupal.org/files/issues/multivalue_fields_fix-2224803-35.patch
 projects[services_entity][version] = 2.0-alpha8
