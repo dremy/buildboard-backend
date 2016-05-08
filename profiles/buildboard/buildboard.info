@@ -1,0 +1,83 @@
+name = Buildboard
+description = Base profile for Buildboard site builds
+core = 7.x
+version = 1.x
+theme = bartik
+
+;
+; Core
+;
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = field
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+;
+; Contrib
+;
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = views
+dependencies[] = entity
+dependencies[] = libraries
+dependencies[] = strongarm
+dependencies[] = module_filter
+dependencies[] = date
+dependencies[] = date_popup
+dependencies[] = field_group
+dependencies[] = geocoder
+dependencies[] = geofield
+dependencies[] = geofield_map
+dependencies[] = geophp
+dependencies[] = pathauto
+dependenices[] = token
+dependencies[] = redirect
+dependencies[] = transliteration
+dependencies[] = flag
+
+
+;
+; Custom
+;
+
+;
+; Features
+;
+
+
+;
+; Variables
+;
+variables[site_name] = Buildboard
+variables[node_admin_theme] = 1
+
+;
+; Sample users
+;
+users[user_admin][uid] = 2
+users[user_admin][name] = user admin
+users[user_admin][mail] = useradmin@buildboard.io
+users[user_admin][status] = 1
+users[user_admin][roles] = user admin
+
+users[content_admin][uid] = 3
+users[content_admin][name] = content admin
+users[content_admin][mail] = contentadmin@buildboard.io
+users[content_admin][status] = 1
+users[content_admin][roles] = content admin
