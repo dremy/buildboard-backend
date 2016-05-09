@@ -52,8 +52,8 @@ projects[services_entity][version] = 2.0-alpha8
 projects[services_addressfield][version] = 1.1
 
 ; Field Placeholder requirements
-libraries[placeholder][download][type] = git
-libraries[placeholder][download][branch] = master
-libraries[placeholder][download][url] = https://github.com/mustangostang/spyc.git
-libraries[placeholder][directory_name] = spyc
-libraries[placeholder][destination] = libraries
+libraries[services][download][type] = git
+libraries[services][download][branch] = master
+libraries[services][download][url] = https://github.com/mustangostang/spyc.git
+libraries[services][directory_name] = spyc
+libraries[services][destination] = libraries
