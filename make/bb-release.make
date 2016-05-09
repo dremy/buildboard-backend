@@ -23,11 +23,13 @@ projects[group][version] = 1.0-beta6
 projects[entityreference][version] = 1.1
 projects[geofield][version] = 2.3
 projects[geophp][version] = 1.7
+projects[geophp][version] = 1.3
 projects[mvf][version] = 1.0-beta3
 projects[multifield][version] = 1.0-alpha1
 projects[auto_nodetitle][version] = 1.0
 projects[units][version] = 1.0-rc1
 projects[currency][version] = 2.6
+projects[addressfield][version] = 1.2
 
 ; Add compatibility with Features
 projects[auto_nodetitle][patch][] = https://www.drupal.org/files/issues/auto_nodetitle-881170-50.patch
@@ -47,3 +49,11 @@ projects[services][version] = 3.13
 ; Services create multivalued field nodes
 projects[services][patch][] = https://www.drupal.org/files/issues/multivalue_fields_fix-2224803-35.patch
 projects[services_entity][version] = 2.0-alpha8
+projects[services_addressfield][version] = 1.1
+
+; Field Placeholder requirements
+libraries[placeholder][download][type] = git
+libraries[placeholder][download][branch] = master
+libraries[placeholder][download][url] = https://github.com/mustangostang/spyc.git
+libraries[placeholder][directory_name] = spyc
+libraries[placeholder][destination] = libraries
