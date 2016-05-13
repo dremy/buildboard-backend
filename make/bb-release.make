@@ -37,6 +37,7 @@ projects[email][patch][] = https://www.drupal.org/files/issues/email-verificatio
 projects[link][version] = 1.3
 projects[telephone][version] = 1.0-alpha1
 projects[name][version] = 1.9
+projects[computed_field][version] = 1.1
 
 ; Add compatibility with Features
 projects[auto_nodetitle][patch][] = https://www.drupal.org/files/issues/auto_nodetitle-881170-50.patch
@@ -63,6 +64,7 @@ projects[services][version] = 3.13
 projects[services][patch][] = https://www.drupal.org/files/issues/multivalue_fields_fix-2224803-35.patch
 projects[services_entity][version] = 2.0-alpha8
 projects[services_addressfield][version] = 1.1
+projects[cors][version] = 1.3
 
 ; Services library Requirement
 libraries[services][download][type] = git
