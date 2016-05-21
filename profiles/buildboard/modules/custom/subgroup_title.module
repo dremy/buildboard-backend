@@ -1,0 +1,24 @@
+<?php 
+/**
+ * @file
+ * The module, which alters the view query.
+ */
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function subgroup_title_views_query_alter(&$view, &$query) {
+
+  // Pull the Group Id from the Views Args as an integer.
+  $gid = (int) $view->args[0];
+  // If not there, use the route argument as a backup.
+  if (!isset($gid)) { 
+    $gid = arg(1);
+  }
+  // If there's a value, load the entity.
+  $group = entity_load_single('group', $gid);
+
+  // Set the title.
+  $new_title = $group->title . "'s Portfolio";
+  $view->build_info['title'] = $new_title;
+}

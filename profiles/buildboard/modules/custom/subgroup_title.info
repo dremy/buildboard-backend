@@ -1,0 +1,5 @@
+name = Sub Group Title
+description = Use some PHP to change the title of the Sub Group view
+core = 7.x
+
+dependencies[] = views

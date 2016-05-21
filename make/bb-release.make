@@ -38,6 +38,8 @@ projects[link][version] = 1.3
 projects[telephone][version] = 1.0-alpha1
 projects[name][version] = 1.9
 projects[computed_field][version] = 1.1
+projects[field_collection][version] = 1.0-beta11
+projects[field_collection_table][version] = 1.0-beta3
 
 ; Add compatibility with Features
 projects[auto_nodetitle][patch][] = https://www.drupal.org/files/issues/auto_nodetitle-881170-50.patch
